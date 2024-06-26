@@ -159,7 +159,7 @@ const {value1,path,value2,path2} = props
   );
 
   return (
-    <Box sx={{ flexGrow: 1, color: "black" }}>
+    <Box sx={{ flexGrow: 1 , color: "black" }}>
       <AppBar position="static">
         <Toolbar>
           <IconButton

@@ -6,9 +6,17 @@ import RadiosCom from '../Components/Radio'
 import GridCom from '../Components/Grid'
 import DialogCom from '../Components/Dialogbox'
 import BasicAlerts from '../Components/Alert'
+import Navbar from "../Components/new-nav"
+import Sec1 from '../Components/Section1'
+import Sec2 from '../Components/Section2'
+import Sec3 from '../Components/Section3'
+
 export default function Home(){
     return(<>
-    <PrimarySearchAppBar value1="Singup" path="/Singup" value2="Login" path2="/Login"/>
-    <h1>Home</h1>
+    {/* <PrimarySearchAppBar value1="Singup" path="/Singup" value2="Login" path2="/Login"/> */}
+    <Navbar value1="Singup" path="/Singup" value2="Login" path2="/Login" />
+  <Sec1/>
+  <Sec2/>
+  <Sec3/>
     </>)
 }

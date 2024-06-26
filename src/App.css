@@ -1,38 +1,315 @@
-.App {
-  text-align: center;
+/* App.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+}
+.App{
+  background-image: url("https://t4.ftcdn.net/jpg/05/31/79/83/360_F_531798391_XFz7gyPmDRTAfiEE5sRjFu5NpKrJt4rC.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-attachment:fixed ;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.color-change-2x{
+    margin-top:44vh;
+    height: 50vh;
+    width: 100%; 
+    flex-wrap: wrap;   
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.tracking-in-expand {
+    padding-top: 22vh;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15vh;
+}
+
+.tracking-in-expand2 {
+  font-family: "Bebas Neue";
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 10vh;
+}
+
+.tracking-in-expand3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15vh;
+}
+.color-change-2x{
+    font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size:8vh;
+}
+.color-change-2x h1{
+  font-size: 10vh;
+}
+.tracking-in-expand{
+  -webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+.tracking-in-expand2 {
+  -webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+.tracking-in-expand3 {
+  -webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+.text-focus-in{-webkit-animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both}
+
+.Sec2img{
+width: 100%;
+height: 100vh;
+position: absolute;
+right: 0;
+z-index: -1;
+top: 100%;
+}
+.Sec3{
+  position: relative;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size:4vh;
+  height: 50vh;
+  width: 100%; 
+  flex-wrap: wrap;
+  margin-top: 12vh;
+}
+
+.Sec3img{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  top: -28%; 
+  }
+  
+  .collecter{
+    margin-top: 34vh;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .uxdiv{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  .uxdiv{
+    width: 40%;
+    position: relative;
+  }
+  .uidiv{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+  }
+  .uximg{
+    align-items: center;
+    height: auto;
+    width: 50%;
+  }
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .tracking-in-expand,
+  .tracking-in-expand3 {
+    font-size: 15vh;
+  }
+  
+  .tracking-in-expand2 {
+    font-size: 10vh;
+  }
+  .color-change-2x{
+    font-size: 8vh;
+  }
+  .color-change-2x h1{
+    font-size: 10vh;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (max-width: 768px) {
+  .tracking-in-expand,
+  .tracking-in-expand3 {
+    font-size: 10vh;
+  }
+  
+  .tracking-in-expand2 {
+    font-size: 6vh;
+  }
+  .color-change-2x{
+    margin-top: 64vh;
+    font-size: 6vh;
+  }
+  .color-change-2x h1{
+    font-size: 8vh;
+  }
+  .Sec3img{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    top: -34%; 
+    }.uximg{
+    height:auto;
+    width: 90%;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 480px) {
+  .tracking-in-expand,
+  .tracking-in-expand3 {
+    font-size: 10vh;
+  }
+  
+  .tracking-in-expand2 {
+    font-size: 5vh;
+  }
+  .color-change-2x{
+    margin-top: 64vh;
+    font-size: 5vh;
+  }
+  .color-change-2x h1{
+    font-size: 7vh;
+  }
+  .collecter{
+    margin-top: 34vh;
+    display: block;
+  }
+  .uidiv{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+  }
+  .uxdiv{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    word-spacing: 1.5vw;
+  }
+  .uxdiv{
+    width: 100%;
+    position: relative;
+    align-items: center;
+  }
+  .uximg{
+    margin-left: 50vw;
+    height:auto;
+    width: 130%;
+  }
+  .Sec3img{
+    width: 100%;
+    height: 120vh;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    top: -28.5%; 
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
   }
 }
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes tracking-in-expand2 {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand2 {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes tracking-in-expand3 {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand3 {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2024-6-25 19:27:51
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+ @-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+
+
+ 
